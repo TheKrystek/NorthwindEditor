@@ -9,38 +9,46 @@
     <Shape ID="DesignTable:Categories" ZOrder="15" X="984" Y="70" Height="181" Width="242" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
     <Shape ID="DesignTable:Customers" ZOrder="14" X="354" Y="756" Height="342" Width="242" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="283" />
     <Shape ID="DesignTable:Employees" ZOrder="13" X="354" Y="1168" Height="365" Width="243" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="306" />
-    <Shape ID="DesignTable:Order Details" ZOrder="12" X="354" Y="70" Height="204" Width="261" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="145" />
-    <Shape ID="DesignTable:Orders" ZOrder="11" X="70" Y="70" Height="365" Width="214" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="306" />
-    <Shape ID="DesignTable:Products" ZOrder="10" X="685" Y="70" Height="319" Width="229" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="260" />
-    <Shape ID="DesignTable:Shippers" ZOrder="9" X="354" Y="1603" Height="158" Width="228" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
-    <Shape ID="DesignTable:Suppliers" ZOrder="1" X="984" Y="320" Height="135" Width="232" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="76" />
+    <Shape ID="DesignTable:Order Details" ZOrder="1" X="384" Y="151" Height="227" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="145" />
+    <Shape ID="DesignTable:Orders" ZOrder="2" X="70" Y="70" Height="388" Width="300" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="306" />
+    <Shape ID="DesignTable:Products" ZOrder="12" X="685" Y="70" Height="319" Width="229" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="260" />
+    <Shape ID="DesignTable:Shippers" ZOrder="11" X="354" Y="1603" Height="158" Width="228" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
+    <Shape ID="DesignTable:Suppliers" ZOrder="3" X="984" Y="320" Height="135" Width="232" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="76" />
   </Shapes>
   <Connectors>
-    <Connector ID="DesignRelation:OrdersOrder Details" ZOrder="8" LineWidth="11">
+    <Connector ID="DesignRelation:OrdersOrder Details" ZOrder="10" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>284</X>
-          <Y>172</Y>
+          <X>370</X>
+          <Y>386</Y>
         </Point>
         <Point>
-          <X>354</X>
-          <Y>172</Y>
+          <X>417</X>
+          <Y>386</Y>
+        </Point>
+        <Point>
+          <X>417</X>
+          <Y>378</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:ProductsOrder Details" ZOrder="7" LineWidth="11">
+    <Connector ID="DesignRelation:ProductsOrder Details" ZOrder="9" LineWidth="11">
       <RoutePoints>
         <Point>
           <X>685</X>
-          <Y>172</Y>
+          <Y>143</Y>
         </Point>
         <Point>
-          <X>615</X>
-          <Y>172</Y>
+          <X>611</X>
+          <Y>143</Y>
+        </Point>
+        <Point>
+          <X>611</X>
+          <Y>151</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:CustomersOrders" ZOrder="6" LineWidth="11">
+    <Connector ID="DesignRelation:CustomersOrders" ZOrder="8" LineWidth="11">
       <RoutePoints>
         <Point>
           <X>354</X>
@@ -52,11 +60,11 @@
         </Point>
         <Point>
           <X>267</X>
-          <Y>435</Y>
+          <Y>458</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:EmployeesOrders" ZOrder="5" LineWidth="11">
+    <Connector ID="DesignRelation:EmployeesOrders" ZOrder="7" LineWidth="11">
       <RoutePoints>
         <Point>
           <X>354</X>
@@ -68,11 +76,11 @@
         </Point>
         <Point>
           <X>259</X>
-          <Y>435</Y>
+          <Y>458</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:ShippersOrders" ZOrder="4" LineWidth="11">
+    <Connector ID="DesignRelation:ShippersOrders" ZOrder="6" LineWidth="11">
       <RoutePoints>
         <Point>
           <X>354</X>
@@ -84,11 +92,11 @@
         </Point>
         <Point>
           <X>251</X>
-          <Y>435</Y>
+          <Y>458</Y>
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:CategoriesProducts" ZOrder="3" LineWidth="11">
+    <Connector ID="DesignRelation:CategoriesProducts" ZOrder="5" LineWidth="11">
       <RoutePoints>
         <Point>
           <X>984</X>
@@ -100,7 +108,7 @@
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:SuppliersProducts" ZOrder="2" LineWidth="11">
+    <Connector ID="DesignRelation:SuppliersProducts" ZOrder="4" LineWidth="11">
       <RoutePoints>
         <Point>
           <X>984</X>
