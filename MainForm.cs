@@ -122,7 +122,6 @@ namespace NorthwindEditor
         private BindingNavigator productsBindingNavigator;
         private ToolStripButton bindingNavigatorAddNewItem;
         private ToolStripLabel bindingNavigatorCountItem;
-        private ToolStripButton bindingNavigatorDeleteItem;
         private ToolStripButton bindingNavigatorMoveFirstItem;
         private ToolStripButton bindingNavigatorMovePreviousItem;
         private ToolStripSeparator bindingNavigatorSeparator;
@@ -193,7 +192,6 @@ namespace NorthwindEditor
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.nwindDataSet = new NorthwindEditor.NwindDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
@@ -848,7 +846,7 @@ namespace NorthwindEditor
             this.productsBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
             this.productsBindingNavigator.BindingSource = this.productsBindingSource;
             this.productsBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.productsBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.productsBindingNavigator.DeleteItem = null;
             this.productsBindingNavigator.Dock = System.Windows.Forms.DockStyle.None;
             this.productsBindingNavigator.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.productsBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -863,7 +861,6 @@ namespace NorthwindEditor
             this.bindingNavigatorMoveLastItem,
             this.bindingNavigatorSeparator2,
             this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
             this.productsBindingNavigatorSaveItem});
             this.productsBindingNavigator.Location = new System.Drawing.Point(0, 565);
             this.productsBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
@@ -873,7 +870,7 @@ namespace NorthwindEditor
             this.productsBindingNavigator.Name = "productsBindingNavigator";
             this.productsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
             this.productsBindingNavigator.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.productsBindingNavigator.Size = new System.Drawing.Size(286, 27);
+            this.productsBindingNavigator.Size = new System.Drawing.Size(301, 27);
             this.productsBindingNavigator.TabIndex = 3;
             this.productsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -903,16 +900,6 @@ namespace NorthwindEditor
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            this.bindingNavigatorDeleteItem.Click += new System.EventHandler(this.bindingNavigatorDeleteItem_Click);
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -2259,14 +2246,14 @@ namespace NorthwindEditor
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CategoriesTableAdapter = null;
-            this.tableAdapterManager.CustomersTableAdapter = null;
-            this.tableAdapterManager.EmployeesTableAdapter = null;
-            this.tableAdapterManager.Order_DetailsTableAdapter = null;
-            this.tableAdapterManager.OrdersTableAdapter = null;
+            this.tableAdapterManager.CategoriesTableAdapter = this.categoriesTableAdapter;
+            this.tableAdapterManager.CustomersTableAdapter = this.customersTableAdapter;
+            this.tableAdapterManager.EmployeesTableAdapter = this.employeesTableAdapter;
+            this.tableAdapterManager.Order_DetailsTableAdapter = this.order_DetailsTableAdapter;
+            this.tableAdapterManager.OrdersTableAdapter = this.ordersTableAdapter;
             this.tableAdapterManager.ProductsTableAdapter = this.productsTableAdapter;
-            this.tableAdapterManager.ShippersTableAdapter = null;
-            this.tableAdapterManager.SuppliersTableAdapter = null;
+            this.tableAdapterManager.ShippersTableAdapter = this.shippersTableAdapter;
+            this.tableAdapterManager.SuppliersTableAdapter = this.suppliersTableAdapter;
             this.tableAdapterManager.UpdateOrder = NorthwindEditor.NwindDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // suppliersTableAdapter
